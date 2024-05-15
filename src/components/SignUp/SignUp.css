@@ -1,0 +1,218 @@
+/* src/components/SignUp/SignUp.css */
+
+.sign-up-container {
+  border: 2px solid #ccc;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  height: 30px;
+  border-radius: 10px;
+}
+
+button[type="submit"] {
+  background-color: green;
+  color: yellow;
+  border: none;
+  padding: 15px 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: auto;
+  display: block;
+}
+
+.sign-up-title {
+  font-size: 15px;
+  color: green;
+  margin-bottom: -200px;
+  margin-top: 50px;
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  margin-left: 470px;
+}
+
+.social-buttons {
+  margin-top: 20px;
+}
+
+.social-line {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.social-buttons-container {
+  display: flex;
+  flex-direction: column; 
+}
+
+.facebook-button, .google-button {
+  padding: 15px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 300px; 
+  font-size: bold;
+}
+
+.facebook-button {
+  background-color: blue;
+  color: white;
+}
+
+.google-button {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+}
+
+.social-buttons span {
+  margin: 0 10px;
+}
+
+.form-group label {
+  margin-left: 10px;
+}
+
+
+.login-link {
+  font-size: 12px; 
+  margin-left: 80px;
+}
+
+.login-link a {
+  color: green; 
+  text-decoration: none;
+}
+
+.shop-now-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.shop-now-btn {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.shop-now-btn i {
+  margin-left: 10px;
+}
+.password-criteria {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10px;
+  margin-left: 80px;
+}
+
+.password-criteria label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: green; /* Set the first four items' names to green */
+}
+
+.password-criteria label:last-child {
+  color: black; /* Last item should have a black background */
+}
+
+.password-criteria input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid green;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.password-criteria input[type="checkbox"]:checked {
+  background-color: green;
+}
+
+.password-criteria input[type="checkbox"]:checked::after {
+  content: '✓';
+  color: white; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.password-criteria label:last-child input[type="checkbox"]:checked {
+  background-color: black;
+}
+
+.password-criteria label:last-child input[type="checkbox"]:checked::after {
+  color: white; /* White tick for the last checkbox */
+}
+
+.password-criteria-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center; /* Center the items horizontally */
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: green;
+}
+
+
+
+.show-password input[type="checkbox"]:checked {
+  background-color: green;
+}
+
+.show-password input[type="checkbox"]:checked::after {
+  content: '✓';
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.show-password input[type="checkbox"] {
+  margin-right: 10px; /* Aligns checkbox to the left of the text */
+  background-color: #fff;
+  border: 2px solid green;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.show-password input[type="checkbox"]:checked {
+  background-color: green; /* Change background color when checked */
+}
+
+
+
