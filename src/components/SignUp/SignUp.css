@@ -1,12 +1,28 @@
-/* src/components/SignUp/SignUp.css */
+.sign-up-page {
+  text-align: center;
+}
+
+.logo-sign-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.smart-mavuno-logo {
+  width: 250px; /* Adjust width as needed */
+  height: auto;
+}
 
 .sign-up-container {
   border: 2px solid #ccc;
   padding: 20px;
   max-width: 400px;
   margin: auto;
-  margin-top: 50px;
-  
 }
 
 .form-group {
@@ -39,14 +55,9 @@ button[type="submit"] {
 }
 
 .sign-up-title {
-  font-size: 15px;
+  font-size: 24px;
   color: green;
-  margin-bottom: -200px;
-  margin-top: 50px;
-  position: absolute;
-  top: -30px;
-  left: 20px;
-  margin-left: 470px;
+  margin-bottom: 20px;
 }
 
 .social-buttons {
@@ -93,7 +104,6 @@ button[type="submit"] {
   margin-left: 10px;
 }
 
-
 .login-link {
   font-size: 12px; 
   margin-left: 80px;
@@ -121,10 +131,10 @@ button[type="submit"] {
 .shop-now-btn i {
   margin-left: 10px;
 }
+
 .password-criteria {
   display: flex;
   flex-direction: column;
-
   margin-top: 10px;
   margin-left: 80px;
 }
@@ -133,11 +143,11 @@ button[type="submit"] {
   display: flex;
   align-items: center;
   margin-top: 10px;
-  color: green; /* Set the first four items' names to green */
+  color: green;
 }
 
 .password-criteria label:last-child {
-  color: black; /* Last item should have a black background */
+  color: black;
 }
 
 .password-criteria input[type="checkbox"] {
@@ -169,14 +179,14 @@ button[type="submit"] {
 }
 
 .password-criteria label:last-child input[type="checkbox"]:checked::after {
-  color: white; /* White tick for the last checkbox */
+  color: white; 
 }
 
 .password-criteria-item {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: center; /* Center the items horizontally */
+  justify-content: center;
 }
 
 .show-password {
@@ -185,8 +195,6 @@ button[type="submit"] {
   margin-top: 10px;
   color: green;
 }
-
-
 
 .show-password input[type="checkbox"]:checked {
   background-color: green;
@@ -200,8 +208,9 @@ button[type="submit"] {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .show-password input[type="checkbox"] {
-  margin-right: 10px; /* Aligns checkbox to the left of the text */
+  margin-right: 10px; 
   background-color: #fff;
   border: 2px solid green;
   border-radius: 50%;
@@ -211,8 +220,5 @@ button[type="submit"] {
 }
 
 .show-password input[type="checkbox"]:checked {
-  background-color: green; /* Change background color when checked */
+  background-color: green; 
 }
-
-
-
