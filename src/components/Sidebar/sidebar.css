@@ -1,0 +1,55 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: white; /* Change background color to white */
+  color: black; /* Change text color to black */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Add padding for spacing */
+}
+
+.sidebar-logo img {
+  width: 100%; /* Make the logo fill its container */
+  max-width: 150px; /* Limit maximum width of the logo */
+  height: auto;
+  margin-bottom: 20px; /* Add bottom margin */
+}
+
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Add bottom margin */
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-info h3,
+.profile-info p {
+  margin: 0;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav ul li {
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+.sidebar-nav ul li a {
+  text-decoration: none;
+  color: black; /* Change link color to black */
+  font-size: 16px;
+}
+
+.sidebar-nav ul li a:hover {
+  text-decoration: underline;
+}
+
