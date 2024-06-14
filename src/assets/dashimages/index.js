@@ -5,15 +5,18 @@ import maize from './maize.png';
 import banana from './banana.png';
 import hoho from './hoho.png';
 import strawberry from './strawberry.png';
+import smart from './smart.png';
+import footer from './footer.png';
 
 const images = {
   main,
   nav,
   maize,
   banana,
-  hoho, // Corrected comma to colon here
-  strawberry
+  hoho, 
+  strawberry,
+  smart,
+  footer
 };
 
 export default images;
-
