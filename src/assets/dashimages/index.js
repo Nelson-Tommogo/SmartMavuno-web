@@ -7,6 +7,8 @@ import hoho from './hoho.png';
 import strawberry from './strawberry.png';
 import smart from './smart.png';
 import footer from './footer.png';
+import expense from './expense.png';
+
 
 const images = {
   main,
@@ -16,7 +18,9 @@ const images = {
   hoho, 
   strawberry,
   smart,
-  footer
+  footer,
+  expense
 };
 
 export default images;
+
