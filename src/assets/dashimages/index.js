@@ -8,6 +8,8 @@ import strawberry from './strawberry.png';
 import smart from './smart.png';
 import footer from './footer.png';
 import expense from './expense.png';
+import donation from './donation.png';
+import thankyou from './thankyou.png';
 
 
 const images = {
@@ -19,6 +21,8 @@ const images = {
   strawberry,
   smart,
   footer,
+  donation,
+  thankyou,
   expense
 };
 
