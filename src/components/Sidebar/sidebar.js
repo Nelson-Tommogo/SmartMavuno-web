@@ -1,5 +1,6 @@
 import React from 'react';
 import './sidebar.css';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import logo from '../../assets/smart-mavuno-logo-zip-file/logo-color.png';
 import profilePic from '../../assets/profile-picture.png'; 
 import bananaImage from '../../assets/banana.png'; 
@@ -30,18 +31,18 @@ const Sidebar = () => {
       <nav className="sidebar-nav">
         <ul className="list-unstyled">
           <li className="mb-3">
-            <a href="#explore" className="text-dark d-flex align-items-center">
+            <Link to="/dashboard" className="text-dark d-flex align-items-center"> {/* Update Link component */}
               <span className="explore-icon mr-3">
                 <i className="fas fa-arrow-up-right-from-square"></i>
               </span>
               Explore
-            </a>
+            </Link>
           </li>
           <li className="mb-3">
-            <a href="#wallet" className="text-black d-flex align-items-center">
+            <Link to="/wallet" className="text-black d-flex align-items-center"> {/* Use Link component */}
               <i className="fas fa-wallet mr-3 nav-icon"></i>
               Wallet
-            </a>
+            </Link>
           </li>
           <li className="mb-3">
             <a href="#shopping-history" className="text-black d-flex align-items-center">
@@ -50,10 +51,10 @@ const Sidebar = () => {
             </a>
           </li>
           <li className="mb-3">
-            <a href="#donation-basket" className="text-black d-flex align-items-center">
+            <Link to="/donations" className="text-black d-flex align-items-center"> {/* Use Link component */}
               <i className="fas fa-gift mr-3 nav-icon"></i>
               Donation Basket
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
