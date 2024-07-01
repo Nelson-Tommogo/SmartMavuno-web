@@ -1,0 +1,169 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.sidebar-logo img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-info h3,
+.profile-info p {
+  margin: 0;
+}
+
+.border-bottom-custom {
+  width: 100%;
+  border-bottom: 2px dashed green;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar-nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-nav ul li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-nav ul li a .nav-icon {
+  color: green;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.sidebar-nav ul li a .explore-icon {
+  color: green;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.sidebar-nav ul li a .mr-3 {
+  margin-right: 15px;
+}
+
+.sidebar-nav ul li a.text-dark {
+  color: #000000;
+}
+
+.sidebar-nav ul li a.text-black {
+  color: #333333;
+}
+
+.last-order-section {
+  padding-top: 20px;
+}
+
+.last-order-section h5 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  margin-top: -40px;
+}
+
+.last-order-section h5 span {
+  margin-left: 40px;
+  font-size: 1.5rem;
+}
+
+.last-order-section ul {
+  padding-left: 0;
+}
+
+.last-order-section li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.last-order-section a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.last-order-section .order-item {
+  width: 50px;
+  height: 50px;
+  border: 2px solid yellow;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.last-order-section .order-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.settings-section {
+  margin-top: 20px; /* Adjust margin-top */
+}
+
+.settings-section ul {
+  padding-left: 0;
+}
+
+.settings-section li {
+  margin-bottom: 15px; /* Adjust margin-bottom */
+}
+
+.settings-section a {
+  text-decoration: none;
+  color: #333333; /* Darker text color */
+  font-size: 20px; /* Increase font size */
+  display: flex;
+  align-items: center;
+}
+
+.settings-section a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+.settings-section a .mr-3 {
+  margin-right: 15px; /* Adjust margin-right */
+}
+
+.settings-section a .fa-cog,
+.settings-section a .fa-chrome,
+.settings-section a .fa-sign-out-alt {
+  color: green; /* Green color for icons */
+  font-size: 30px; /* Increase icon size */
+}

@@ -1,0 +1,32 @@
+.thank-you-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.thank-you-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.back-to-home-button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.back-to-home-button:hover {
+  background-color: #45a049;
+}
+

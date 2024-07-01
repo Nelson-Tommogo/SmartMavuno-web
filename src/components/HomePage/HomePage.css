@@ -1,0 +1,86 @@
+/* HomePage.css */
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes at least the height of the viewport */
+    background-color: #fff; /* Background color for the entire page */
+    padding: 20px;
+}
+
+.top-bar {
+    background-color: #fff; /* White background */
+    padding: 10px 20px;
+    margin: 10px 20px; /* Reduced margin top and bottom */
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px;
+    margin-right: 10px; /* Margin between logo and Header */
+}
+
+.buttons {
+    display: flex;
+    gap: 10px; /* Adjusted gap between buttons */
+}
+
+.green-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.green-button:hover {
+    background-color: #45a049;
+}
+
+.navigation-bar {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 10px 20px;
+    margin: 0 20px; /* Adjusted margin */
+    margin-top: -50px;
+    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: green; /* Default color for nav items */
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-item:hover {
+    color: #333; /* Hover color for nav items */
+}
+
+.active {
+    font-weight: bold; /* Bold font for active nav item */
+    color: black !important; /* Text color for active nav item */
+    background-color: #4CAF50; /* Background color for active nav item */
+}
+
+/* Footer styling */
+.footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
