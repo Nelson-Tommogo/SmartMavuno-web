@@ -13,6 +13,13 @@ import donation from './donation.png';
 import thankyou from './thankyou.png';
 import logo from './logo.png';
 import profile from './profile-picture.png';
+import Consultancies from './Consultancies.jpg';
+import equipment from './equipment.jpg';
+import irrigation from './irrigation.jpg';
+import labour from './labour.jpg';
+import lease from './lease.jpeg';
+import pest from './pest-control.jpg';
+import testing from './soil-testing.jpg';
 
 const images = {
   main,
@@ -27,8 +34,15 @@ const images = {
   thankyou,
   expense,
   logo,
-  profile
+  profile,
+  Consultancies,
+  equipment,
+  irrigation,
+  labour,
+  lease,
+  pest,
+  testing
+  
 };
 
 export default images;
-
