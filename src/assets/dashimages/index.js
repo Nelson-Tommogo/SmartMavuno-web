@@ -20,6 +20,23 @@ import labour from './labour.jpg';
 import lease from './lease.jpeg';
 import pest from './pest-control.jpg';
 import testing from './soil-testing.jpg';
+import cabbage from './cabbage.jpg';
+import chickens from './chickens.jpg';
+import dripirrigation from './dripirrigation.jpg';
+import eggs from './eggs.jpg'; 
+import freeland from './freeland.jpg';
+import labourlatest from './labourlatest.jpg';
+import maindi from './maindi.jpg'; 
+import onions from './onions.jpg'; 
+import tomatoes from './tomatoes.jpg';
+import tractor from './tractor.jpg';
+import zerograzing from './zerograzing.jpg';
+import kevin from './kevin-removebg-preview.png';
+import martha from './martha-removebg-preview.png';
+import david from './david-removebg-preview.png';
+import mitchel from './mitchel-removebg-preview.png';
+import thomas from './thomas-removebg-preview.png';
+import cynthia from './cynthia-removebg-preview.png';
 
 const images = {
   main,
@@ -41,7 +58,24 @@ const images = {
   labour,
   lease,
   pest,
-  testing
+  testing,
+  cabbage,
+  chickens,
+  dripirrigation,
+  eggs,
+  freeland,
+  labourlatest,
+  maindi,
+  onions,
+  tomatoes,
+  tractor,
+  zerograzing,
+  kevin,
+  martha,
+  david,
+  mitchel,
+  thomas,
+  cynthia,
   
 };
 
