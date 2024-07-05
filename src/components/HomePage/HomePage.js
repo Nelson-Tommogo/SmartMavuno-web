@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './HomePage.css'; 
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faGraduationCap, faChartLine, faComments, faDollarSign, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import { faSun, faGraduationCap, faChartLine, faComments, faDollarSign, faProjectDiagram, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import images from '../../assets/dashimages';
 import Header from '../Header/header';
 import Footer from '../Footer/Footer';
@@ -26,6 +26,30 @@ const features = [
     { name: "Market Insight", icon: faDollarSign, link: "/market-insight", description: "Gain insights into market trends and analysis." },
 ];
 
+const latestItems = [
+    { name: "Cabbage", image: images.cabbage, serviceType: "Vegetable" },
+    { name: "Chickens", image: images.chickens, serviceType: "Poultry" },
+    { name: "Drip Irrigation", image: images.dripirrigation, serviceType: "Irrigation" },
+    { name: "Eggs", image: images.eggs, serviceType: "Poultry" },
+    { name: "Free Land", image: images.freeland, serviceType: "Land" },
+    { name: "Labour Latest", image: images.labourlatest, serviceType: "Labour" },
+    { name: "Maindi", image: images.maindi, serviceType: "Crop" },
+    { name: "Onions", image: images.onions, serviceType: "Vegetable" },
+    { name: "Tomatoes", image: images.tomatoes, serviceType: "Vegetable" },
+    { name: "Tractor", image: images.tractor, serviceType: "Equipment" },
+    { name: "Zero Grazing", image: images.zerograzing, serviceType: "Farming" },
+];
+
+// Testimonial data
+const testimonials = [
+    { name: "Kevin", image: images.kevin, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+    { name: "Martha", image: images.martha, text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." },
+    { name: "David", image: images.david, text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
+    { name: "Mitchel", image: images.mitchel, text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
+    { name: "Thomas", image: images.thomas, text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium." },
+    { name: "Cynthia", image: images.cynthia, text: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." },
+];
+
 const HomePage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -35,6 +59,18 @@ const HomePage = () => {
         }, 7000); // Change slide every 7 seconds
 
         return () => clearInterval(interval);
+    }, []);
+
+    // Scroll functionality for latest section
+    useEffect(() => {
+        const scrollInterval = setInterval(() => {
+            const container = document.querySelector('.latest-container');
+            if (container) {
+                container.scrollLeft += container.clientWidth; // Scroll to the next item
+            }
+        }, 5000); // Scroll every 10 seconds
+
+        return () => clearInterval(scrollInterval);
     }, []);
 
     const goToPreviousSlide = () => {
@@ -68,14 +104,22 @@ const HomePage = () => {
                     <NavLink to="/market-insight" className="nav-item" activeClassName="active">Market Insight</NavLink>
                     <div className="dropdown-content">
                         <NavLink to="/workshops" className="dropdown-item">Workshops</NavLink>
-                        <NavLink to="/contact-us" className="dropdown-item">Contact Us</NavLink>
-                        <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
+                        <NavLink to="/projects" className="dropdown-item">Projects</NavLink>
+                        
                     </div>
                 </div>
                 <div className="dropdown">
                     <NavLink to="/education" className="nav-item" activeClassName="active">Education</NavLink>
                     <div className="dropdown-content">
                         <NavLink to="/modern-farming" className="dropdown-item">Modern Farming</NavLink>
+                    </div>
+                </div>
+                <div className="dropdown">
+                    <NavLink to="/more-insight" className="nav-item" activeClassName="active">More Insight</NavLink>
+                    <div className="dropdown-content">
+                        <NavLink to="/contact-us" className="dropdown-item">Contact Us</NavLink>
+                        <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
+                        <NavLink to="/about" className="dropdown-item">About US</NavLink>
                     </div>
                 </div>
                 <div className="dropdown">
@@ -126,9 +170,45 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+            <div className="latest-section">
+                <div className="container">
+                    <h2>Latest!</h2>
+                    <div className="latest-container">
+                        {latestItems.map((item, index) => (
+                            <div key={index} className="latest-item">
+                                <img src={item.image} alt={item.name} className="latest-image" />
+                                <div className="latest-info">
+                                    <h5>{item.name}</h5>
+                                    <p>{item.serviceType}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+            
+            {/* Testimonials section */}
+            <div className="testimonials-section">
+                   <h2>Testimonials</h2>
+                <div className="container">
+                    
+                    <div className="testimonials-container">
+                        {testimonials.map((testimonial, index) => (
+                            <div key={index} className="testimonial-item">
+                                <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
+                                <div className="testimonial-content">
+                                    <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon" />
+                                    <p>{testimonial.text}</p>
+                                    <h5>{testimonial.name}</h5>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
             <Footer />
         </div>
     );
-}
+};
 
 export default HomePage;
