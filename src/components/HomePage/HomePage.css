@@ -3,6 +3,7 @@
 html, body {
   height: 100%;
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .home-page {
@@ -200,9 +201,11 @@ html, body {
 
 .features-section h2 {
     font-size: 3.5rem;
-    color: #333;
+    color: green;
     text-align: left;
     margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
 }
 
 .features-description {
@@ -260,3 +263,151 @@ html, body {
 .feature-item a:hover {
     color: #28a745; /* Green color */
 }
+
+
+/* Latest Section */
+.latest-section {
+    padding: 50px 0;
+    margin-top: 20px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+    background-color: #f9f9f9; /* Light grey background */
+}
+
+.latest-section h2 {
+    font-size: 3.5rem;
+    color: green;
+    text-align: left;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
+}
+
+.latest-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.latest-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    min-width: 250px; /* Ensure each item has a minimum width */
+    margin-right: 20px; /* Adjust spacing between items */
+    margin-bottom: 20px;
+}
+
+.latest-item .latest-image {
+    width: 80px; /* Adjust the size of the image */
+    height: 80px; /* Adjust the size of the image */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.latest-item .latest-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.latest-item h5 {
+    font-size: 1.5rem;
+    color: green;
+    margin-bottom: 5px;
+}
+
+.latest-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 20px 0;
+    margin-top: 20px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+    text-align: center; /* Center align the content */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.testimonials-section h2 {
+    font-size: 3.5rem;
+    color: green;
+    text-align: center; /* Center align the title */
+    margin-bottom: 30px;
+    text-decoration: underline;
+    position: sticky; /* Keep the title fixed */
+    top: 0; /* Position at the top */
+    background-color: #fff; /* Background color for clarity */
+    z-index: 1; /* Ensure title is above testimonials */
+    width: 100%; /* Full width */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: flex-start; /* Start from the left */
+    align-items: center;
+    gap: 20px; /* Adjust spacing between testimonials */
+    padding: 10px; /* Add padding for space */
+    margin-left: 0; /* Reset margin */
+    margin-right: 0; /* Reset margin */
+    padding-left: 10px; /* Adjust padding for left */
+    padding-right: 10px; /* Adjust padding for right */
+}
+
+.testimonial-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    align-items: center; /* Center align items */
+    padding: 20px;
+    min-width: 250px; /* Adjust minimum width of each testimonial item */
+}
+
+.testimonial-item:first-child {
+    margin-left: -90px; /* Adjust margin for the first item */
+}
+
+.testimonial-item .testimonial-image {
+    width: 80px; /* Adjust size of testimonial image */
+    height: 80px; /* Adjust size of testimonial image */
+    border-radius: 50%; /* Make image circular */
+    object-fit: cover;
+    background-color: green; /* Set background color of the image */
+    margin-bottom: 20px; /* Adjust spacing */
+}
+
+.testimonial-item .testimonial-content {
+    text-align: center; /* Center align content */
+}
+
+.testimonial-item .quote-icon {
+    font-size: 2rem;
+    color: green; /* Adjust quote icon color */
+    margin-bottom: 10px;
+}
+
+.testimonial-item p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h5 {
+    font-size: 1.5rem;
+    color: green; /* Adjust testimonial name color */
+    margin-bottom: 0;
+}
+
