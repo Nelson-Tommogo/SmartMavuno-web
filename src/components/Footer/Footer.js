@@ -2,12 +2,13 @@
 
 import React from 'react';
 import './Footer.css'; // Import Footer.css for styling
+import images from '../../assets/dashimages'; // Import images
 
 function Footer() {
   return (
     <div className="footer-container">
       <div className="newsletter-section">
-        <img src="/smart.webp" alt="Newsletter" className="newsletter-image" />
+        <img src= {images.smart} alt="Newsletter" className="newsletter-image" />
         <div className="vertical-line"></div>
         <div className="newsletter-content">
           <p>Subscribe to our newsletter to get our updates and recommendations</p>
@@ -25,7 +26,7 @@ function Footer() {
       <div className="footer-main">
         <div className="footer-section">
           <h4>Download our app Today.</h4>
-          <img src="path/to/google-play-badge.png" alt="Download on Google Play" className="app-download"/>
+          <img src= {images.footer} alt="Download on Google Play" className="app-download"/>
         </div>
 
         <div className="footer-section">

@@ -100,7 +100,7 @@
   background-color: #f0fff0;
   position: relative; /* Ensure the container is relative for absolute positioning to work */
   z-index: 0; /* Set a lower z-index to keep it below the newsletter */
-  margin-top: 170px;
+  margin-top: 165px;
   border-radius: 10px;
 }
 

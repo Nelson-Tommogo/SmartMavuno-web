@@ -56,7 +56,7 @@ function Dashboard() {
               <div className="col-md-4">
                 <div className="item-container">
                   <div className="image-container">
-                    <img src={images.strawberry} alt="Product" className="img-fluid" />
+                    <img src={images.maize} alt="Product" className="img-fluid" />
                     <span className="love-icon"><i className="fas fa-heart"></i></span>
                     <span className="plus-icon"><i className="fas fa-plus"></i></span>
                   </div>

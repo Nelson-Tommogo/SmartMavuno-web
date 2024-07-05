@@ -1,11 +1,15 @@
+// SignUp.js
+
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SignUp.css'; // Import SignUp.css for styling
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Footer from '../Footer/Footer'; // Import the Footer component
+import images from '../../assets/dashimages'; // Import images
 
 function SignUp() {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
   const criteria = {
     capitalLetter: /[A-Z]/.test(password),
@@ -19,13 +23,25 @@ function SignUp() {
     setShowPassword(!showPassword);
   };
 
+  const handleShopNowClick = () => {
+    navigate('/dashboard'); // Navigate to the Dashboard page
+  };
+
+  const handleLoginClick = (e) => {
+    e.preventDefault();
+    navigate('/login'); // Navigate to the Login page
+  };
+
   return (
-    <div>
+    <div className="sign-up-page">
+      <div className="logo-container">
+        <img src={images.logo} alt="Logo" className="logo-image" /> 
+      </div>
       <div className="sign-up-container">
         <h2 className="sign-up-title">Sign Up</h2>
         <form>
           <div className="form-group">
-            <label htmlFor="firstName">First Name <span className="login-link">Have an account? <a href="/login">Log in</a></span></label>
+            <label htmlFor="firstName">First Name <span className="login-link">Have an account? <a href="/login" onClick={handleLoginClick}>Log in</a></span></label>
             <input type="text" id="firstName" placeholder="Faith" />    
           </div>
           <div className="form-group">
@@ -53,9 +69,11 @@ function SignUp() {
           <button type="submit" className="sign-up-button">Sign Up</button>
         </form>
         <div className="social-buttons">
-          <div className="social-line"></div>
-          <span>OR</span>
-          <div className="social-line"></div>
+          <div className="or-section">
+            <div className="or-line"></div>
+            <span>OR</span>
+            <div className="or-line"></div>
+          </div>
           <div className="password-criteria">
             <label className={`criteria-item ${criteria.capitalLetter ? 'checked' : ''}`}>
               <input type="checkbox" checked={criteria.capitalLetter} readOnly />
@@ -85,11 +103,10 @@ function SignUp() {
         </div>
       </div>
       <div className="shop-now-button">
-        <button className="shop-now-btn">
+        <button className="shop-now-btn" onClick={handleShopNowClick}>
           SHOP NOW <i className="fas fa-arrow-right"></i>
         </button>
       </div>
-      <Footer /> {/* Include the Footer component */}
     </div>
   );
 }

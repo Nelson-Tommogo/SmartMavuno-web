@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
+}
+
+.donation-page {
+  display: flex;
+  flex-grow: 1; /* Ensure the main content takes up the remaining space */
+  padding-bottom: 100px; /* Add bottom padding equivalent to the height of the footer */
+}
+
+.sidebar {
+  width: 300px;
+  flex: 0 0 auto;
+}
+
+.donation-main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 20px; 
+}
+
+.donation-text {
+  color: black;
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-top: 20px;
+  max-width: 800px;
+  margin: 20px auto; 
+  margin-left: 250px;
+  font-family: 'Times New Roman', serif;
+}
+
+.donation-section {
+  display: flex;
+  flex-direction: column; /* Ensure the section content is arranged in a column */
+  align-items: center; /* Center align items horizontally */
+  margin-top: 40px; /* Add margin above the section */
+}
+
+.donation-heading {
+  color: green;
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.donation-input {
+  background-color: lightgrey;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  width: 100px; /* Set a fixed width for the input box */
+}
+
+.donation-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px; /* Add margin below the button */
+}
+
+.donation-button:hover {
+  background-color: darkgreen;
+}
+
+.donation-image {
+  margin-top: 20px;
+  max-width: 450px; /* Set a fixed max-width for the image */
+  height: auto;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Increase the margin between the footer and the rest of the content */
+}
+

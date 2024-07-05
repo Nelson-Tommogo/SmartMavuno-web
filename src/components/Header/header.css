@@ -2,8 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 300px; /* Adjust the max width as needed */
+  width: 50px; /* Adjusted width */
   margin: 20px auto; /* Center the form and add some margin */
   border-radius: 20px;
 }
@@ -22,12 +21,12 @@
 }
 
 .search-input {
-  width: 100%;
+  width: calc(100% - 40px); /* Adjusted width to accommodate icon */
   padding: 10px 40px 10px 10px; /* Adjust padding to make space for the icon */
   border: 1px solid #ccc;
   border-radius: 10px;
   outline: none;
-  font-size: 18<<<<px;
+  font-size: 18px;
   color: #333;
   background-color: #f0f0f0; /* Light grey background */
 }
