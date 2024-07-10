@@ -42,12 +42,12 @@ const latestItems = [
 
 // Testimonial data
 const testimonials = [
-    { name: "Kevin", image: images.kevin, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
-    { name: "Martha", image: images.martha, text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." },
-    { name: "David", image: images.david, text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
-    { name: "Mitchel", image: images.mitchel, text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
-    { name: "Thomas", image: images.thomas, text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium." },
-    { name: "Cynthia", image: images.cynthia, text: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." },
+    { name: "Kevin", image: images.kevin, text: "SmartMavuno transformed my farming journey with its seamless integration of essential services like soil testing and pest control. Now, I farm with confidence knowing I have the right support at every step" },
+    { name: "Martha", image: images.martha, text: "Thanks to SmartMavuno, I no longer worry about finding reliable equipment rental or agricultural consultancy. Their platform simplifies these services, allowing me to focus more on growing my crops." },
+    { name: "David", image: images.david, text: "SmartMavuno's dedication to connecting farmers to markets and fostering community among agricultural peers is unparalleled. They've created a platform that not only boosts productivity but also encourages collaboration." },
+    { name: "Mitchel", image: images.mitchel, text: "Using SmartMavuno for irrigation schemes and land leasing has been a game-changer for my farm. I've seen significant improvements in efficiency and yield, all while saving time and resources." },
+    { name: "Thomas", image: images.thomas, text: "I highly recommend SmartMavuno to any farmer serious about maximizing their agricultural potential. Their comprehensive services and market connections have been essential to my farm's success" },
+    { name: "Cynthia", image: images.cynthia, text: "SmartMavuno isn't just a software—it's a lifeline for farmers. From pest control to market connections, they've thought of everything. It's the partner every modern farmer needs." },
 ];
 
 const HomePage = () => {
@@ -59,18 +59,6 @@ const HomePage = () => {
         }, 7000); // Change slide every 7 seconds
 
         return () => clearInterval(interval);
-    }, []);
-
-    // Scroll functionality for latest section
-    useEffect(() => {
-        const scrollInterval = setInterval(() => {
-            const container = document.querySelector('.latest-container');
-            if (container) {
-                container.scrollLeft += container.clientWidth; // Scroll to the next item
-            }
-        }, 5000); // Scroll every 10 seconds
-
-        return () => clearInterval(scrollInterval);
     }, []);
 
     const goToPreviousSlide = () => {
@@ -88,7 +76,7 @@ const HomePage = () => {
                 <Header />
                 <div className="buttons">
                     <NavLink to="/signup" className="green-button">Sign Up</NavLink>
-                    <button className="green-button">Login</button>
+                    <NavLink to="/login" className="green-button">Login</NavLink>
                 </div>
             </div>
             <div className="navigation-bar">
@@ -117,7 +105,7 @@ const HomePage = () => {
                 <div className="dropdown">
                     <NavLink to="/more-insight" className="nav-item" activeClassName="active">More Insight</NavLink>
                     <div className="dropdown-content">
-                        <NavLink to="/contact-us" className="dropdown-item">Contact Us</NavLink>
+                        <NavLink to="/reach-us" className="dropdown-item">Reach Us</NavLink>
                         <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
                         <NavLink to="/about" className="dropdown-item">About US</NavLink>
                     </div>
@@ -212,4 +200,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
