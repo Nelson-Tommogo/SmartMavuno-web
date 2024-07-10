@@ -1,4 +1,3 @@
-// Login.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
@@ -11,7 +10,7 @@ const Login = () => {
                 <img src={logo} alt="Logo" className="smart-mavuno-logo" />
             </div>
             <form className="login-form">
-                <h2 className="login-title">Log In</h2> {/* Form heading */}
+                <h2 className="login-header">Log In</h2> {/* Renamed class */}
                 <div className="form-group">
                     <div className="label-container">
                         <label htmlFor="email">Email:</label>
@@ -23,7 +22,7 @@ const Login = () => {
                     <label htmlFor="password">Password:</label>
                     <input type="password" id="password" name="password" required />
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit" className="login-button">Login</button> {/* Renamed class */}
                 <div className="or-section">
                     <div className="or-line"></div>
                     <span>OR</span>
@@ -42,4 +41,3 @@ const Login = () => {
 }
 
 export default Login;
-
