@@ -37,6 +37,7 @@ import david from './david-removebg-preview.png';
 import mitchel from './mitchel-removebg-preview.png';
 import thomas from './thomas-removebg-preview.png';
 import cynthia from './cynthia-removebg-preview.png';
+import reach from './reach.png';
 
 const images = {
   main,
@@ -76,6 +77,7 @@ const images = {
   mitchel,
   thomas,
   cynthia,
+  reach
   
 };
 
