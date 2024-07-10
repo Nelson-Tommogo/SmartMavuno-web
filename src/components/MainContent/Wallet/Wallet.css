@@ -1,0 +1,177 @@
+/* Existing styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure full height of viewport */
+  font-family: Arial, sans-serif; 
+}
+
+.wallet-wrapper {
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh; 
+  position: relative; 
+}
+
+.content-wrapper {
+  display: flex; /* Nested flex container for sidebar and main content */
+  flex: 1; /* Allow content to grow */
+  margin-bottom: 250px; /* Ensure space below content for footer */
+}
+
+.content-wrapper > .sidebar {
+  width: 300px; /* Fixed width for the sidebar */
+  background-color: #f0f0f0; 
+  flex: 0 0 auto; /* Sidebar should not grow or shrink */
+}
+
+.content-wrapper > .wallet-main {
+  flex: 1; 
+  padding: 20px; 
+  background-color: #fff;
+}
+
+.wallet-main h1 {
+  color: green; 
+  font-size: 34px; 
+  margin-bottom: 10px; 
+  font-family: 'Times New Roman', serif; /* Font family for h1 */
+}
+
+.wallet-main .wallet-subtitle {
+  color: green; 
+  font-size: 28px; 
+  margin-left: 30%; /* Adjust to center relative to the box */
+  margin-top: 20px; 
+  font-family: 'Arial', sans-serif; /* Font family for h2 */
+}
+
+.wallet-box {
+  margin-top: 20px; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  color: #fff; 
+  width: 80%;
+}
+
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Example margin */
+}
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
+  margin-left: auto;
+}
+
+.box-content {
+  margin-top: 10px; 
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Arial', sans-serif;
+  color: black;
+}
+
+.box-content span {
+  font-size: 70px;
+  font-family: 'Times New Roman', serif; 
+  margin-top: 20px;
+}
+
+.wallet-main > header {
+  text-align: center; 
+}
+
+.filter-section {
+  position: relative;
+  margin-top: 20px; 
+}
+
+.dropdown-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px; /* Set a fixed width for the dropdown */
+}
+
+.dropdown-wrapper:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-icon {
+  color: green;
+  margin-left: 10px;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  list-style: none;
+  padding: 0;
+  width: 200px; /* Ensure the width matches the dropdown wrapper */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-list li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.dropdown-list li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Adjust image size */
+.expense-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px; 
+}
+
+/* Style "See all" link */
+.expenses-section .text-secondary {
+  font-size: 14px;
+  color: #6c757d; /* Grey color */
+  margin-left: 700px;
+}
+
+
+.expenses-section .expense-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.expenses-section .expense-details p {
+  margin: 0; 
+}
+
+.expenses-section .col-md-5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.expenses-section .col-md-5 .price {
+  font-weight: bold;
+  margin-left: auto;
+}
+
