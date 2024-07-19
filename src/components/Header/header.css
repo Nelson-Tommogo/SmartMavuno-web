@@ -1,0 +1,37 @@
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Adjusted width */
+  margin: 20px auto; /* Center the form and add some margin */
+  border-radius: 20px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px; /* Position the icon inside the input on the right */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999; /* Adjust the icon color */
+}
+
+.search-input {
+  width: calc(100% - 40px); /* Adjusted width to accommodate icon */
+  padding: 10px 40px 10px 10px; /* Adjust padding to make space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 18px;
+  color: #333;
+  background-color: #f0f0f0; /* Light grey background */
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
